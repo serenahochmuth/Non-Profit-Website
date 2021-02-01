@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+<title>The Philippines Project: Contact </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="For quick contact, fill out the mail form with name, email, and message contents. Do not leave any field blank. You will get a reply within 24 hours. ">
+<meta name="keywords" content="contact, mail, email, name, send, message, reply, 24 hours">
+<meta name="copywright" content="The Philippines Project">
+<meta name="author" content="Serena Hochmuth">
+<meta name="robots" content="index,about,project2018,project2019,project2021,contact,donate,testimony,volunteer,privacy">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://kit.fontawesome.com/feaa785ddd.js" crossorigin="anonymous">
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</head>
+<body>
+<header class="header">
+  <h1 class="logo"><a href="index.html">The Philippines Project </a></h1>
+  <form class="header-right">
+    <a href="https://www.instagram.com/philippine_service/"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/groups/1884174251620028/"><i class="fab fa-facebook"></i></a>
+    <a href="contact.html"><i class="far fa-envelope"></i></a>
+    <iframe src="https://duckduckgo.com/search.html?width=200&site=http://nova.umuc.edu/~ct386b05/project4.html/&prefill=Search&bgcolor=#000000" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;"></iframe>
+  </form>
+</header><br>
+<nav class="nav">
+  <ul>
+    <li><a href="index.html" class="home">Home</a></li>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="about.html"> About Us</a></li>
+    <li class="dropdown">
+      <button class="dropbtn"> Our Projects
+      <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+    <a href ="project2018.html"> 2018 </a>
+    <a href ="project2019.html"> 2019 </a>
+    <a href ="project2021.html"> Upcoming Project </a></div></li>
+    <li><a href="contact.html"> Contact</a></li>
+    <li><a href="donate.html"> Donate</a></li>
+    <li class="dropdown">
+      <button class="dropbtn"> Get Involved
+      <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+    <a href ="testimony.html"> Testimonies </a>
+    <a href ="volunteer.html"> Volunteer </a>
+  </div>
+  </li>
+</ul>
+</ul>
+    </nav>
+  <h2> Quick Contact </h2>
+  <section class="center">
+  <h3> Contact us today, and get a reply within 24 hours! </h3><br>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+<form name="myForm" action="mailto:philippineservice@gmail.com" onsubmit="return validateForm()" method="post" enctype="text/plain">
+<fieldset>
+    <legend>Personal Information:</legend>
+    <label for="fname">First name:</label><br><span class="required">*</span>
+    <input class="required" type="text" id="fname" tabindex="1" name="fname" placeholder="Insert First Name"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" tabindex="2" name="lname" placeholder="Insert Last Name"><br>
+      <label for="email"> Email:</label><br>
+      <input type="email" id="email" tabindex="3" name="mail" placeholder="Insert Email Here"/><br>
+  <label for="under18">What is Your Age?</label><br>
+  <input type="radio" id="under18" name="answer" value="Under18">
+  <label for="under18">Under 18</label><br>
+  <input type="radio" id="18to25" name="answer" value="18to25">
+  <label for="over25">18 to 25</label><br>
+  <input type="radio" id="over25" name="answer" value="over25">
+  <label for="over25">Over 25</label>
+  </fieldset>
+<label for="message"> Send Message:</label><br><br>
+<textarea rows="4" id="message" cols="50" tabindex="4" name="comment" placeholder="Enter Message Here"></textarea><br>
+  <label for="reason">Reason for Contact</label>
+  <select id="reason" tabindex="5" name="reason">
+    <option value="volunteer">Volunteer</option>
+    <option value="donation">Donations</option>
+    <option value="partner">Partnership</option>
+  </select><br>
+<input type="checkbox" tabindex="5"/>
+Please confirm that the information above is correct<br>
+<input type="submit" tabindex="6" value="Send"/>
+<input type="reset" tabindex="7" value="Reset">
+</form><br>
+</section>
+<footer>
+  <p id="date"></p>
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+<p>© 2020 Service for Peace Philippines Project. All rights reserved. <a href="privacy.html"> Disclaimer & Privacy Policy</a></p>
+  <a href="https://www.instagram.com/philippine_service/"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.facebook.com/groups/1884174251620028/"><i class="fab fa-facebook"></i></a>
+  <a href="contact.html"><i class="far fa-envelope"></i></a></footer>
+</body>
+</html>

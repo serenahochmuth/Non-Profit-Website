@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <title>The Philippines Project: Project 2019 </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="In 2019, 16 volunteers planted trees and built a fence for Montesunting Elementary School. The volunteers also spent time with the elementary school students and immersed in the culture.">
+  <meta name="keywords" content="service project, 2019, planting trees, building a fence, Bohol, Montesunting elementary school, carmen, volunteer">
+  <meta name="copywright" content="The Philippines Project">
+  <meta name="author" content="Serena Hochmuth">
+  <meta name="robots" content="index,about,project2018,project2019,project2021,contact,donate,testimony,volunteer,privacy">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://kit.fontawesome.com/feaa785ddd.js" crossorigin="anonymous">
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</head>
+<body>
+<header class="header">
+  <h1 class="logo"><a href="index.html">The Philippines Project </a></h1>
+  <form class="header-right">
+    <a href="https://www.instagram.com/philippine_service/"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/groups/1884174251620028/"><i class="fab fa-facebook"></i></a>
+    <a href="contact.html"><i class="far fa-envelope"></i></a>
+    <iframe src="https://duckduckgo.com/search.html?width=200&site=http://nova.umuc.edu/~ct386b05/project4.html/&prefill=Search&bgcolor=#000000" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;"></iframe>
+  </form>
+</header><br>
+<nav class="nav">
+  <ul>
+    <li><a href="index.html" class="home">Home</a></li>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="about.html"> About Us</a></li>
+    <li class="dropdown">
+      <button class="dropbtn"> Our Projects
+      <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+    <a href ="project2018.html"> 2018 </a>
+    <a href ="project2019.html"> 2019 </a>
+    <a href ="project2021.html"> Upcoming Project </a></div></li>
+    <li><a href="contact.html"> Contact</a></li>
+    <li><a href="donate.html"> Donate</a></li>
+    <li class="dropdown">
+      <button class="dropbtn"> Get Involved
+      <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+    <a href ="testimony.html"> Testimonies </a>
+    <a href ="volunteer.html"> Volunteer </a>
+  </div>
+  </li>
+</ul>
+</ul>
+    </nav>
+    <h2>Planting Trees & Building A Fence for the Montesunting Community </h2>
+
+<section class="column2">
+  <h3 class="hidden"> . </h3>
+  <section class="slideshow-container">
+    <h3 class="hidden"> . </h3>
+    <img class="mySlides fade" src="2019group.jpg" alt="international group of volunteers all together">
+    <img class="mySlides fade" src="kids.jpg" alt="international volunteer with students from Montesunting">
+    <img class="mySlides fade" src="wall.jpg" alt="hand prints on painted wall">
+    <img class="mySlides fade" src="wall2.jpg" alt="two volunteers posing in front of finished wall">
+    <img class="mySlides fade" src="school.jpg" alt="front sign for Montesunting elementary school">
+    <img class="mySlides fade" src="stairs.jpg" alt="painted stairs to Montesunting elementary school">
+<a class="prev" onclick="plusSlides(-1)"><i class="fas fa-arrow-left"></i></a>
+<a class="next" onclick="plusSlides(1)"><i class="fas fa-arrow-right"></i></a>
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  </section>
+    </section>
+    <section class="aside">
+      <h3> In 2019, a group of 16 international volunteers set out (again) to the island of Bohol in the Philippines. The group worked at an elementary school in Montesunting in Carmen, Bohol. At this school, the volunteers planted trees and built a fence. The fence was vibrant with many colors and representation. <br><br> Most importantly, the volunteers got to spend time with the elementary school students. A huge part of these service trips is immersing into the culture, and these volunteers did just that!  </h3>
+      </section>
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<footer>
+  <p id="date"></p>
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+<p>© 2020 Service for Peace Philippines Project. All rights reserved. <a href="privacy.html"> Disclaimer & Privacy Policy</a></p>
+  <a href="https://www.instagram.com/philippine_service/"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.facebook.com/groups/1884174251620028/"><i class="fab fa-facebook"></i></a>
+  <a href="contact.html"><i class="far fa-envelope"></i></a></footer>
+</body>
+</html>
